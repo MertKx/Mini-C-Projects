@@ -3,8 +3,8 @@
 #include<stdio.h>
 
 int main(void) {
-	char shapeName,r,t,c;
-	int lenght,width,radius,area;
+	char shapeName;
+	float length,width,radius,area;
 	
 	printf("Welcome to area calculator!\n");
 	
@@ -14,31 +14,31 @@ int main(void) {
 	switch(shapeName){
 		case('r'):{
 			printf("Please enter your rectangles width: ");
-			scanf("%d" , &width);
+			scanf("%f" , &width);
 			
-			printf("Well done! And please enter your rectangles lenght: ");
-			scanf("%d" , &lenght);
+			printf("Well done! And please enter your rectangles length: ");
+			scanf("%f" , &length);
 			
-			area = width * lenght;
+			area = width * length;
 			break;
 		}
 		
 		case('t'):{
 			printf("Please enter your triangles width: ");
-			scanf("%d" , &width);
+			scanf("%f" , &width);
 			
-			printf("Well done! And please enter your triangles lenght: ");
-			scanf("%d" , &lenght);
+			printf("Well done! And please enter your triangles length: ");
+			scanf("%f" , &length);
 			
-			area = (width * lenght)/2;
+			area = (width * length)/2;
 			break;
 		}
 		
 		case('c'):{
 			printf("Please enter your circles radius: ");
-			scanf("%d" , &radius);
+			scanf("%f" , &radius);
 			
-			area = 3 * radius * radius;
+			area = 3.14 * radius * radius;
 			break;
 		}
 		
@@ -46,7 +46,7 @@ int main(void) {
 	}
 	
 	
-	printf("Calculation is done. \nYour area is %0.3d\n" , area);
+	printf("Calculation is done. \nYour area is %0.3f\n" , area);
 	printf("Thanks for using calculator. . .");
 		
 	return 0;
