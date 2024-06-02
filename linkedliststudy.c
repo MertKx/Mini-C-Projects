@@ -39,7 +39,7 @@ node * ekleSirali(node*r,int x){
         //root degismeli burda cunku ilk elemanin soluna ekledik
         node * temp=(node*)malloc(sizeof(node));
         temp->x=x;
-        temp->next=root;
+        temp->next=r;
         return temp;
     }
 
@@ -71,6 +71,7 @@ int main(){
     root= ekleSirali(root,450);
     root= ekleSirali(root,50);
     bastir(root);
+    /*
     //Araya eleman ekleme
     node * iter;
     iter = root;
@@ -88,6 +89,7 @@ int main(){
     temp->x =100;
     //tum linked listi bastirdik
     bastir(root);
+    */
 
     return 0;
 }
